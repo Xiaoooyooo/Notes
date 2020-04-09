@@ -1,0 +1,20 @@
+1.新建空文件夹，初始化仓库 git init
+2.将文件添加到本地仓库 git add <file>,再git commit -m "message"
+3.查看工作区状态 git status,查看修改内容 git diff
+4.回退版本 git reset --hard <vision>,查看历史版本信息 git log，
+   查看历史命令 git reflog
+5.丢弃工作区的修改 git checkout -- <file> //还未使用git add
+   撤销暂存区的修改 git reset HEAD <file> //使用了git add，但未git commit
+				 //HEAD 表示最新版版本
+6.删除文件 rm <file>
+   从版本库中删除 git rm <file>
+   误删恢复 git checkout <file>
+7.分支管理 
+	创建分支 git checkout -b <name> //创建并进入分支
+	或先 git branch <name>，再 git checkout <name> //先创建，再进入
+	查看当前分支 git branch
+8.合并分支 git merge <name> //合并指定分支到当前分支
+9.删除分支 git branch -d <name>
+10.临时保存工作进度 git stash,恢复工作 git stash pop 
+     查看临时保存进度 git stash list, 恢复指定进度 git stash apply stash@{index}
+11.丢弃一个没有合并的分支 git branch -D <name>
