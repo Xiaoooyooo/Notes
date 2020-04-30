@@ -35,7 +35,7 @@ MongoClient.connect(url,{},(err,database)=>{
 
 ```js
 MongoClient.connect(url,{},(err,database)=>{
-    //连接到test文档
+    //连接到test数据库
     let test = database.db('test')
     //新建集合
     test.createCollection('first',(err,res)=>{
@@ -77,8 +77,6 @@ MongoClient.connect(url,(err,database)=>{
     })
 })
 ```
-
-
 
 ## 增删改查
 
@@ -298,4 +296,8 @@ MongoClient.connect(url,(err,database)=>{
     }
 ]
 ```
+
+## 参考资料
+
++ [Node.js MongoDB](https://www.w3schools.com/nodejs/nodejs_mongodb.asp)
 
