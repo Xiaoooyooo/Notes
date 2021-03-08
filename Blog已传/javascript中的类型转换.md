@@ -1,3 +1,14 @@
+---
+title: JavaScript中不同数据类型之间的运算和比较
+date: 2019-09-25 22:32:27
+#index_img: https://demos.xiaoooyooo.site/picture?tag=008
+tags:
+    - JavaScript
+    - 数据类型转换
+categories:
+    - JavaScript
+---
+
 # JavaScript中不同数据类型之间的运算和比较
 
 ## 前言

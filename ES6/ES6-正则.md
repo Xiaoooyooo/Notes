@@ -182,7 +182,7 @@ ES2018 引入s修饰符，使得`.`可以匹配任意单个字符，这被称为
 
 ```js
 /(?<=\$)\d+/.exec('Benjamin Franklin is on the $100 bill')  // ["100"]
-/(?<!\$)\d+/.exec('it’s is worth about €90')                // ["90"]
+/(?<!\$)\d+/.exec('it\'s is worth about €90')                // ["90"]
 ```
 
 > 正则匹配的贪婪模式：在满足匹配规则的条件下尽可能多的匹配。

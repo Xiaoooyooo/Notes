@@ -1,3 +1,13 @@
+---
+title: ES6-async
+date: 2019-10-08 15:08:45
+tags:
+	- JavaScript
+	- ES6
+categories:
+	- JavaScript
+---
+
 # ES6-async
 
 ES2017 标准引入了 async 函数，使得异步操作变得更加方便。

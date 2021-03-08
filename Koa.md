@@ -122,7 +122,7 @@ done
 const fs = require('fs')
 const main = async (ctx,next)=>{
   ctx.response.type = 'html';
-  ctx.response.body = await fs.readFile('./demos/template.html', 'utf8');
+  ctx.response.body = await fs.readFileSync('./template.html', 'utf8');
 }
 ```
 

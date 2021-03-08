@@ -247,3 +247,15 @@ Array(3) // [, , ,]
 注意，空位不是`undefined`，一个位置的值等于`undefined`，依然是有值的。空位是没有任何值
 
 **由于空位的处理规则非常不统一，所以建议避免出现空位。**
+
+## 补充：ES5中的Array实例方法
+
++ array.concat()
++ array.join()
++ array.pop()
++ array.push()
++ array.pop()
++ array.unshift()
++ array.shift()
++ array.slice()
++ array.splice()

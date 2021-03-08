@@ -174,12 +174,14 @@ MongoClient.connect(url,(err,database)=>{
 + 第一个参数`[query_options]`为查询条件，其中若条件为字符串则可使用正则表达式
 + `find()`的第二个参数`[fields]`为描述输出结果的应该包含的字段对象
 + 使用`limit([number])`来限制返回的文档数量
++ 使用`skip([number])`实现分页查询
 
 ```js
 MongoClient.connect(url,{},(err,database)=>{
     if(err)
         throw err
     let test = database.db('test')
+    
     //findOne()
     test.collection('first').findOne({age:21},(err,res)=>{
         if(err)
@@ -188,6 +190,7 @@ MongoClient.connect(url,{},(err,database)=>{
         database.close()
         console.log('Find Success!')
     })
+    
     //find()
     let rules = {
         projection:{
@@ -197,6 +200,27 @@ MongoClient.connect(url,{},(err,database)=>{
         }
     }
     test.collection('first').find({age:21},rules).toArry((err,res)=>{
+        if(err)
+            throw err
+        console.log(res)
+        database.close()
+        console.log('Find Success!')
+    })
+    
+    //limit()
+    test.collection('first').find({age:21},rules).limit(10).toArry((err,res)=>{
+        // limit(10) 仅返回前十条数据
+        if(err)
+            throw err
+        console.log(res)
+        database.close()
+        console.log('Find Success!')
+    })
+    
+    //skip()
+  	test.collection('first').find({age:21},rules)
+    .limit(10).skip(10).toArry((err,res)=>{
+        // limit(10) 仅返回十条数据，且从第十一条数据开始
         if(err)
             throw err
         console.log(res)

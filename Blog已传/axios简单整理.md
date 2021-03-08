@@ -1,3 +1,14 @@
+---
+title: axios简单整理
+date: 2019-09-11 21:39:32
+#index_img: https://demos.xiaoooyooo.site/picture?tag=004*
+tags:
+  - Vue
+  - axios
+categories: 
+  - Vue
+---
+
 # Axios
 
 ## 用法：
@@ -145,6 +156,3 @@ axios.interceptors.response.use( res => {
 //某个实例响应拦截
 实例名.interceptors.response.use(/*代码同上*/)
 ```
-
-
-

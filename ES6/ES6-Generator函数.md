@@ -1,3 +1,13 @@
+---
+title: ES6-Generator函数
+date: 2019-10-07 21:10:19
+tags:
+	- JavaScript
+	- ES6
+categories:
+	- JavaScript
+---
+
 # ES6-Generator函数
 
 形式上，Generator 函数是一个普通函数，但是有两个特征。一是，`function`关键字与函数名之间有一个星号；二是，函数体内部使用`yield`表达式，定义不同的内部状态（`yield`在英语里的意思就是“产出”）。

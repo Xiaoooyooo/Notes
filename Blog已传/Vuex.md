@@ -1,8 +1,18 @@
+---
+title: Vuex简单整理
+date: 2019-09-11 21:46:28
+#index_img: https://demos.xiaoooyooo.site/picture?tag=014
+tags:
+    - Vue
+    - Vuex
+categories:
+    - Vue
+---
+
 # Vuex
 
 ## 适用情况
-多个页面共享状态，  
-如仅仅是父子组件共享状态则可不用Vuex
+多个页面共享状态，如仅仅是父子组件共享状态则可不用Vuex。
 
 ## 文档
 
@@ -42,8 +52,6 @@ Vuex.Store({
 })
 
 ```
-
-
 
   **mutations**
 

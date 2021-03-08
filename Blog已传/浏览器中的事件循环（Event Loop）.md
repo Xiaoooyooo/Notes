@@ -1,3 +1,14 @@
+---
+title: 浏览器中的事件循环（Event Loop）
+date: 2019-10-12 21:16:47
+#index_img: https://demos.xiaoooyooo.site/picture?tag=003
+tags:
+    - 浏览器
+    - Event Loop
+categories:
+    - 浏览器
+---
+
 # 浏览器中的事件循环（Event Loop）
 
 ## JavaScript运行机制
@@ -33,7 +44,7 @@ JavaScript的单线程也就意味着，所有的任务都必须“排队”，�
 
 宏任务在满足执行条件之后，会把相应的回调函数加入到宏队列中，而微任务则会加入到微队列中。本文就浏览器端做主要叙述。下图详细展示了浏览器的事件循环机制：
 
-![]( https://user-gold-cdn.xitu.io/2018/9/5/165a8667bb6e623e?imageView2/0/w/1280/h/960/format/webp/ignore-error/1 )
+![]( https://user-gold-cdn.xitu.io/2018/9/5/165a8667bb6e623e?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 下面是我个人对于这个过程的理解：
 
@@ -97,7 +108,7 @@ console.log(7);
 
    输出2，并把Promise回调添加到微任务队列；
 
-8. 微任务队列不为空，执行回调并输出5；
+8. 微任务队列不为空，执行回调并输出3；
 
 9. 微任务队列为空，检查宏任务队列，执行回调输出6；
 
