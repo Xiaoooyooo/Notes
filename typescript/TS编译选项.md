@@ -13,7 +13,6 @@ categories:
 + `tsc`：编译当前目录下所有ts文件，需要配置文件（tsconfig.json）
 + `tsc [filename]`：编译指定文件
 + `tsc -w`：自动监视
-+ 
 
 ## tsconfig.json
 
